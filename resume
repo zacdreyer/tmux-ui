@@ -1,0 +1,13 @@
+#!/bin/bash
+
+clear
+echo "Resume TMUX Session"
+echo "-------------------"
+echo ""
+tmux list-sessions
+echo ""
+echo "-------------------"
+echo "Please enter the session name"
+read -p '>> ' session_name
+
+tmux attach -t $session_name

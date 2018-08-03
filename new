@@ -1,0 +1,9 @@
+#!/bin/bash
+
+clear
+echo Create New TMUX Session
+echo -----------------------
+echo "Please name your new session"
+read -p '>> ' session_name
+
+tmux new -s $session_name
